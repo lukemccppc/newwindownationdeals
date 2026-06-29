@@ -62,10 +62,15 @@
 			.mobile-headline {
 				display: block;
 				text-align: center;
+				margin-bottom: 28px;
 			}
 			.mobile-headline .title {
 				margin: 0;
 				line-height: 1.15;
+			}
+			.mobile-headline .title.is-1,
+			.mobile-headline .title.is-2 {
+				font-size: 32px !important;
 			}
 
 			/* Turn supporting copy into callout bubbles */
@@ -74,16 +79,27 @@
 				background: #3D9BE9;
 				border-radius: 999px;
 				padding: 8px 18px;
-				margin: 8px auto;
-				font-size: 14px !important;
 				font-weight: 600;
 				text-shadow: none !important;
 				color: #fff !important;
+			}
+			.title.callout-bubble {
+				font-size: 18px !important;
+				margin-top: 0 !important;
+				margin-bottom: 12px !important;
+			}
+			.title.callout-bubble:last-child {
+				margin-bottom: 0 !important;
 			}
 			h2.fast-install.callout-bubble,
 			h3.special.callout-bubble,
 			h4.callout-bubble {
 				font-style: normal;
+			}
+			.column.has-text-centered.is-8 {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
 			}
 
 			/* Shrink "Get Your FREE Estimate Today!" to fit on one line */
